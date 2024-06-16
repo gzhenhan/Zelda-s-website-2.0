@@ -26,3 +26,6 @@ Here are links to official websites and additional resources.
 ## Website status
 
 Currently updating the About page with information about Zelda's owner (aka me)!
+
+
+<img src="https://github.com/gzhenhan/Zelda-s-website-2.0/assets/57628471/27641f0a-f09e-4eb4-89e9-c9e8c1026967" alt="family_photo" width="500">
