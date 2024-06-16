@@ -20,7 +20,7 @@ Some packages I've used that you may need to install
 Here are links to official websites and additional resources.
 
 - [React](https://react.dev/): the most popular frontend framework. Here's a great, full-length [tutorial](https://scrimba.com/learn/learnreact).
-- [Packages] (https://www.npmjs.com/package/package): i've used this to search for some interesting packages that could be used in this site.
+- [Packages](https://www.npmjs.com/package/package): i've used this to search for some interesting packages that could be used in this site.
 - [Vite](https://vitejs.dev/): a build tool to quickly set up React (and other) projects.
 
 ## Website status
