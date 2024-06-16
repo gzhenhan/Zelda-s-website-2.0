@@ -1,0 +1,126 @@
+.profile-card {
+  width: 1000px;
+  margin: 0px auto;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.profile-summary {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.profile-name-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 36px;
+  color: rgb(53, 53, 53);
+  margin: 0;
+}
+
+.profile-label {
+  font-size: 14px;
+  color: #999;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.profile-info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.info-label {
+  font-size: 14px;
+  color: #999;
+}
+
+.info-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(53, 53, 53);
+}
+
+/* Story part */
+.profile-story {
+  margin-top: 20px;
+}
+
+.story-text {
+  font-size: 14px;
+  color: #333;
+}
+
+.profile-album {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.photos-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.profile-photos {
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.profile-photos.zoomed {
+  transform: scale(2);
+  z-index: 10;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+/* .info-icon {
+  font-size: 16px;
+  color: #999;
+} */

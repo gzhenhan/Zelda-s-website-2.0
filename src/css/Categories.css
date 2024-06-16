@@ -1,0 +1,20 @@
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  margin: 0em 1em 1.5em;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffc400;
+  color: #fff;
+  cursor: pointer; /* 悬停在某个元素上时变成手形图标 */
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #82533d;
+  transition: background-color 0.3s ease;
+}

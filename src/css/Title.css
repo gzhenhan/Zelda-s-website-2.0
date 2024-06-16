@@ -1,0 +1,15 @@
+.title {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.title-underline {
+  background: #a68760;
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+}
+
+.title h2 {
+  margin-bottom: 0.25rem;
+}

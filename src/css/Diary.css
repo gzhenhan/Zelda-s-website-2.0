@@ -1,0 +1,41 @@
+.diary-page-container {
+  margin: 30px;
+}
+
+.diary-container {
+  display: flex;
+}
+
+.diary-list {
+  width: 70%;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.411);
+  border: 1px solid #ddd;
+}
+
+.diary-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.diary-entry {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.diary-entry:hover {
+  background-color: #f4e7c2;
+}
+
+.diary-entry h3 {
+  margin: 0;
+}
+
+.diary-entry p {
+  margin: 0;
+  color: #888;
+}

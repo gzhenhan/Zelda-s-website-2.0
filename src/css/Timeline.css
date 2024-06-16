@@ -1,0 +1,33 @@
+.vertical-timeline {
+  margin-bottom: 30px;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 1em 3em !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block;
+    float: none;
+  }
+}
+
+.click-hint {
+  color: #82533d;
+  font-size: 14px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: visibility 0s, opacity 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+}
+
+.vertical-timeline-element:hover .click-hint {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

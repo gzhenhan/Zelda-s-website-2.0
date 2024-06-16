@@ -1,0 +1,40 @@
+.my-masonry-grid {
+  display: flex;
+  margin: 20px 40px 0px 10px;
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px; /* 图片间距距离 */
+  /* background-clip: padding-box; */
+}
+
+.photo-item {
+  margin-bottom: 30px;
+  position: relative;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-item:hover {
+  transform: translateY(-10px); /* 悬停时向上移动 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* 悬停时增加阴影 */
+}
+
+.photo-item > img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.photo-item > video {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}

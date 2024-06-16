@@ -1,0 +1,50 @@
+.diary-detail {
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.diary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.diary-header h2 {
+  font-size: 24px;
+}
+
+.diary-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.go-back-button {
+  padding: 10px 20px;
+  background-color: #82533d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.go-back-button:hover {
+  background-color: #5c3b2b;
+}
+
+.photo-gallery {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.diary-content img {
+  width: 30%;
+  border-radius: 8px;
+}
