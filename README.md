@@ -4,16 +4,10 @@ Welcome to the repository for my individual project Zelda's website 2.0.
 
 ## Getting started
 
-Navigate to the "zelda's-website-2.0" directory
+Navigate to the "zelda's-website-2.0" directory.
 First enter `npm install` in the terminal to install the necessary dependencies, then enter `npm run dev` to start the development server. The terminal will show you which port the project is running on (most likely 5173). Enter `http://localhost:{PORT}` in a browser of your choice and feel free to navigate around and interact with the website.
 
-Some packages I've used that you may need to install
-
-- npm install react-router-dom
-- npm i react-responsive-masonry
-- npm i react-calendar
-- npm i react-vertical-timeline-component
-- npm i react-wandering-pet
+Because the Photos page contains large videos, so the page may be lagging, please be patient.
 
 ## Support
 
