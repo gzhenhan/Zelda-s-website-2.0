@@ -1,4 +1,5 @@
 # Zelda's website 2.0
+**News: the website can be accessed via https://catzelda.netlify.app/ (deployed using netlify)**
 
 Welcome to the repository for my individual project Zelda's website 2.0.
 
