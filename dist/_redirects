@@ -1,0 +1,2 @@
+# Netlify：所有路径回退到 index.html，供 SPA 路由使用
+/*    /index.html   200
