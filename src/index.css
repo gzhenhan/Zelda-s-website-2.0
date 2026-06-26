@@ -1,13 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Tailwind 的 preflight 会清空所有标题 (h1-h6) 的字号、加粗和外边距。
+ * 这里在 base 层把浏览器默认排版加回来，恢复改造前的视觉效果；
+ * 组件内的工具类 (如 text-4xl、m-0) 仍可正常覆盖这些默认值。
+ */
+@layer base {
+  h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.67em 0;
+  }
+  h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.83em 0;
+  }
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 1em 0;
+  }
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1.33em 0;
+  }
+  h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+    margin: 1.67em 0;
+  }
+  h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+    margin: 2.33em 0;
+  }
+}
+
+/* 保留项目原有基础样式，与 Tailwind 并存 */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: rgb(53, 53, 53);
-
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
 }
 
 body {
@@ -15,7 +53,6 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-
   display: flex;
   background-color: #f3e3cb;
   flex-direction: column;

@@ -1,11 +1,10 @@
-import "../css/Title.css";
 import PropTypes from "prop-types";
 
 const Title = ({ title }) => {
   return (
-    <div className="title">
-      <h2>{title || "Default Title"}</h2>
-      <div className="title-underline"></div>
+    <div className="text-center my-[50px]">
+      <h2 className="mb-1">{title || "Default Title"}</h2>
+      <div className="bg-brand-light w-28 h-1 mx-auto"></div>
     </div>
   );
 };

@@ -1,6 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
 import diaryData from "../diaryData";
-import "../css/DiaryDetail.css";
 
 const DiaryDetail = () => {
   const { date } = useParams(); // /diary/:date
@@ -16,23 +15,26 @@ const DiaryDetail = () => {
   }
 
   return (
-    <div className="diary-detail">
-      <div className="diary-header">
-        <button onClick={() => navigate(-1)} className="go-back-button">
+    <div className="px-10 py-5 bg-white rounded-lg shadow-[0_0_10px_rgba(0,0,0,0.1)] m-5">
+      <div className="flex justify-between items-center mb-[30px]">
+        <button
+          onClick={() => navigate(-1)}
+          className="px-5 py-[10px] bg-brand text-white border-none rounded-[5px] cursor-pointer text-[13px] hover:bg-brand-dark"
+        >
           Back
         </button>
-        <h2>{diary.title}</h2>
+        <h2 className="text-2xl">{diary.title}</h2>
         <p>{diary.date}</p>
       </div>
-      <div className="diary-content">
+      <div className="flex flex-col ml-[30px]">
         <p>{diary.content}</p>
-        <div className="photo-gallery">
+        <div className="mt-5 flex flex-row gap-5">
           {diary.photoSrc &&
             diary.photoSrc.map((src, index) => (
               <img
                 key={index}
                 src={src}
-                className="img"
+                className="w-[30%] rounded-lg"
                 alt={`${diary.title} ${index + 1}`}
               />
             ))}

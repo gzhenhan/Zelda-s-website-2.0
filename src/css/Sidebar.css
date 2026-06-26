@@ -1,11 +1,4 @@
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  width: 30%;
-  /* background-color: rgba(200, 200, 200, 0.2); */
-}
-
+/* react-calendar 是第三方组件，其内部类名只能通过全局 CSS 覆盖，无法用 Tailwind 工具类 */
 .react-calendar {
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

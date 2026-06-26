@@ -1,4 +1,3 @@
-import "../css/Photos.css";
 import { useState } from "react";
 import photoData from "../photoData.js";
 import PhotoItem from "./PhotoItem.jsx";
@@ -36,8 +35,8 @@ const Photos = () => {
       <Categories categories={categories} filterItems={filterItems} />
       <Masonry
         breakpointCols={breakpointColumnsObj}
-        className="my-masonry-grid"
-        columnClassName="my-masonry-grid_column"
+        className="flex w-auto mt-5 mr-10 mb-0 ml-[10px]"
+        columnClassName="pl-[30px]"
       >
         {photoItems.map((photoItem) => (
           <PhotoItem key={photoItem.id} {...photoItem} />

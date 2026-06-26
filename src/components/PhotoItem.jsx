@@ -11,13 +11,19 @@ const PhotoItem = ({ img, video, title }) => {
   };
 
   return (
-    <article className="photo-item">
-      {img && <img src={img} className="img" alt={title} />}
+    <article className="mb-[30px] relative shadow-[1px_1px_8px_rgba(0,0,0,0.25)] rounded-[10px] bg-white overflow-hidden transition-[transform,box-shadow] duration-300 hover:-translate-y-[10px] hover:shadow-[0_8px_16px_rgba(0,0,0,0.2)]">
+      {img && (
+        <img
+          src={img}
+          className="w-full h-auto object-cover block"
+          alt={title}
+        />
+      )}
       {video && (
         <video
           ref={videoRef}
           src={video}
-          className="video"
+          className="w-full h-auto cursor-pointer relative z-[2]"
           controls
           onClick={handleVideoClick}
         />

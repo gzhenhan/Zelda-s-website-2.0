@@ -2,27 +2,26 @@ import Title from "./Title";
 import Sidebar from "./Sidebar";
 import diaryData from "../diaryData";
 import { Link } from "react-router-dom";
-import "../css/Diary.css";
 import { WanderingPet } from "react-wandering-pet";
 import catGif from "react-wandering-pet/dist/assets/cat.gif";
 
 const Diary = () => {
   return (
-    <div className="diary-page-container">
+    <div className="m-[30px]">
       <Title title="Welcome to Zelda's (Mom's) Diary" />
-      <div className="diary-container">
+      <div className="flex">
         <Sidebar />
-        <div className="diary-list">
+        <div className="w-[70%] p-5 bg-white/40 border border-[#ddd]">
           <h2>Diary List</h2>
           {diaryData.map((diary) => (
             <Link
               key={diary.date}
               to={`/diary/${diary.date}`}
-              className="diary-link"
+              className="no-underline text-inherit"
             >
-              <div className="diary-entry">
-                <h3>{diary.title}</h3>
-                <p>{diary.date}</p>
+              <div className="flex justify-between ml-[10px] mb-[10px] p-[5px] transition-colors duration-300 hover:bg-[#f4e7c2]">
+                <h3 className="m-0">{diary.title}</h3>
+                <p className="m-0 text-[#888]">{diary.date}</p>
               </div>
             </Link>
           ))}

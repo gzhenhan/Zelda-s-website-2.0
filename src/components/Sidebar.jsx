@@ -6,7 +6,7 @@ import Calendar from "react-calendar";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div className="flex flex-col p-[30px] w-[30%]">
       <Calendar />
       {/* <WanderingPet
         src={catGif} // Optional. Default is the orange cat GIF.

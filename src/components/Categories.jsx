@@ -1,14 +1,13 @@
 import PropTypes from "prop-types";
-import "../css/Categories.css";
 
 const Categories = ({ categories, filterItems }) => {
   return (
-    <div className="btn-container">
+    <div className="flex justify-center">
       {categories.map((category) => {
         return (
           <button
             type="button"
-            className="btn"
+            className="mx-4 mb-6 px-4 py-2 border border-[#ccc] rounded-[5px] bg-gold text-white text-base cursor-pointer transition-colors duration-300 hover:bg-brand"
             key={category}
             onClick={() => filterItems(category)}
           >

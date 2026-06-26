@@ -1,5 +1,3 @@
-import { useState } from "react";
-import "../css/Home.css";
 import Title from "./Title";
 import Profilecard from "./Profilecard";
 
