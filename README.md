@@ -1,5 +1,5 @@
 # Zelda's website 2.0
-**News: the website can be accessed via https://catzelda.netlify.app/ (deployed using netlify)**
+**News: the website can be accessed via https://zealous-grass-0e8fd1710.7.azurestaticapps.net/ (deployed using Azure)**
 
 Welcome to the repository for my individual project Zelda's website 2.0.
 
